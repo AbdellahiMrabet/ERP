@@ -134,7 +134,14 @@ export default function Quotes({ onChange }: { onChange: () => void }) {
       <div style={{ ...panel, overflowX: "auto" }}>
         <table width="100%">
           <thead>
-            <tr align="left"><th>Number</th><th>Title</th><th>Client</th><th>Valid until</th><th>Total</th><th>Status</th><th /></tr>
+            <tr style={{ textAlign: "left" }}>
+              <th>Number</th>
+              <th>Title</th>
+              <th>Client</th>
+              <th>Valid until</th>
+              <th>Total</th>
+              <th>Status</th>
+              <th /></tr>
           </thead>
           <tbody>
             {quotes.length === 0 && <tr><td colSpan={7} style={{ color: "#6b7280" }}>No quotations yet.</td></tr>}
@@ -205,7 +212,13 @@ export default function Quotes({ onChange }: { onChange: () => void }) {
 
             <table width="100%" style={{ marginTop: 16 }}>
               <thead>
-                <tr align="left"><th>Description · البند</th><th style={{ width: 90 }}>Qty</th><th style={{ width: 120 }}>Unit price</th><th style={{ width: 110 }}>Amount</th><th style={{ width: 30 }} /></tr>
+                <tr style={{ textAlign: "left" }}>
+                  <th>Description · البند</th>
+                  <th style={{ width: 90 }}>Qty</th>
+                  <th style={{ width: 120 }}>Unit price</th>
+                  <th style={{ width: 110 }}>Amount</th>
+                  <th style={{ width: 30 }} />
+                </tr>
               </thead>
               <tbody>
                 {form.items.map((line, i) => (

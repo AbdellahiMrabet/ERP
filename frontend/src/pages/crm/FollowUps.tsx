@@ -109,7 +109,14 @@ export default function FollowUps({ onChange }: { onChange: () => void }) {
       <div style={{ ...panel, overflowX: "auto" }}>
         <table width="100%">
           <thead>
-            <tr align="left"><th>Due</th><th>Subject</th><th>Type</th><th>Related to</th><th>Assigned</th><th>Status</th><th /></tr>
+            <tr style={{ textAlign: "left" }}>
+              <th>Due</th>
+              <th>Subject</th>
+              <th>Type</th>
+              <th>Related to</th>
+              <th>Assigned</th>
+              <th>Status</th>
+              <th /></tr>
           </thead>
           <tbody>
             {items.length === 0 && <tr><td colSpan={7} style={{ color: "#6b7280" }}>No follow-ups.</td></tr>}

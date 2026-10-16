@@ -149,7 +149,7 @@ export default function ProjectDetail({ id, clients, employees, onClose, onChang
         )}
         <div style={{ overflowX: "auto" }}>
           <table width="100%">
-            <thead><tr align="left"><th>Employee</th><th>Role</th><th>Responsibilities</th><th>Tasks (open / done)</th><th /></tr></thead>
+            <thead><tr style={{ textAlign: "left" }}><th>Employee</th><th>Role</th><th>Responsibilities</th><th>Tasks (open / done)</th><th /></tr></thead>
             <tbody>
               {project.members.length === 0 && <tr><td colSpan={5} style={{ color: "#6b7280" }}>No team members yet.</td></tr>}
               {project.members.map((m) => (

@@ -62,7 +62,7 @@ export default function ProjectList({ onChange }: { onChange: () => void }) {
       <div style={{ ...panel, overflowX: "auto" }}>
         <table width="100%">
           <thead>
-            <tr align="left">
+            <tr style={{ textAlign: "left" }}>
               <th>Project</th><th>Status</th><th>Priority</th><th>Manager</th><th style={{ minWidth: 150 }}>Progress</th><th>Deadline</th><th>Team</th>
             </tr>
           </thead>

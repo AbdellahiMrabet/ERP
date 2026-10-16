@@ -191,7 +191,7 @@ export default function TimesheetsTab({ onChange }: { onChange: () => void }) {
       <div style={{ ...panel, overflowX: "auto" }}>
         <table width="100%">
           <thead>
-            <tr align="left">
+            <tr style={{ textAlign: "left" }}>
               <th>Date</th>{canAll && <th>Employee</th>}<th>Project</th><th>Task</th><th>Hours</th><th>Notes</th><th>Status</th><th />
             </tr>
           </thead>
@@ -235,7 +235,7 @@ export default function TimesheetsTab({ onChange }: { onChange: () => void }) {
           <div style={{ ...panel, flex: 2, minWidth: 320, overflowX: "auto" }}>
             <h4 style={{ margin: "0 0 8px" }}>Hours by project · {summary.from} → {summary.to}</h4>
             <table width="100%">
-              <thead><tr align="left"><th>Project</th><th>Hours</th><th>Approved</th>{showCost && <th>Labor cost</th>}</tr></thead>
+              <thead><tr style={{ textAlign: "left" }}><th>Project</th><th>Hours</th><th>Approved</th>{showCost && <th>Labor cost</th>}</tr></thead>
               <tbody>
                 {summary.by_project.length === 0 && <tr><td colSpan={4} style={{ color: "#6b7280" }}>Nothing logged.</td></tr>}
                 {summary.by_project.map((p) => (
@@ -251,7 +251,7 @@ export default function TimesheetsTab({ onChange }: { onChange: () => void }) {
           <div style={{ ...panel, flex: 1, minWidth: 260, overflowX: "auto" }}>
             <h4 style={{ margin: "0 0 8px" }}>Hours by employee</h4>
             <table width="100%">
-              <thead><tr align="left"><th>Employee</th><th>Hours</th></tr></thead>
+              <thead><tr style={{ textAlign: "left" }}><th>Employee</th><th>Hours</th></tr></thead>
               <tbody>
                 {summary.by_employee.map((e) => <tr key={e.employee_id}><td>{e.employee_name}</td><td>{e.hours}</td></tr>)}
               </tbody>

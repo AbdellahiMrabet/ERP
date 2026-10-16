@@ -25,7 +25,7 @@ export default function TaskTable({ tasks, showProject, onStatus, onEdit, onDele
     <div style={{ overflowX: "auto" }}>
       <table width="100%">
         <thead>
-          <tr align="left">
+          <tr style={{ textAlign: "left" }}>
             <th>Task</th>{showProject && <th>Project</th>}<th>Assigned to</th><th>Priority</th><th>Due</th><th>Status</th><th />
           </tr>
         </thead>

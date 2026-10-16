@@ -98,7 +98,13 @@ export default function Users() {
 
         <table width="100%">
           <thead>
-            <tr align="left"><th>Name</th><th>Email</th><th>Role</th><th>Active</th><th>Last login</th><th /></tr>
+            <tr style={{ textAlign: "left" }}>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Active</th>
+              <th>Last login</th>
+              <th /></tr>
           </thead>
           <tbody>
             {users.map((u) => (
@@ -134,7 +140,7 @@ export default function Users() {
         <div style={{ overflowX: "auto" }}>
           <table width="100%">
             <thead>
-              <tr align="left">
+              <tr style={{ textAlign: "left" }}>
                 <th>Permission</th>
                 {roles.map((r) => (
                   <th key={r.id} style={{ textAlign: "center" }}>

@@ -80,7 +80,15 @@ export default function Employees({ onChange }: { onChange: () => void }) {
       <div style={{ ...panel, overflowX: "auto" }}>
         <table width="100%">
           <thead>
-            <tr align="left"><th>Name</th><th>Job title</th><th>Department</th><th>Email</th><th>Projects</th><th>Open tasks</th><th>Status</th><th /></tr>
+            <tr style={{ textAlign: "left" }}>
+              <th>Name</th>
+              <th>Job title</th>
+              <th>Department</th>
+              <th>Email</th>
+              <th>Projects</th>
+              <th>Open tasks</th>
+              <th>Status</th>
+              <th /></tr>
           </thead>
           <tbody>
             {employees.length === 0 && <tr><td colSpan={8} style={{ color: "#6b7280" }}>No employees yet.</td></tr>}

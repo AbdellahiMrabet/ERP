@@ -1,0 +1,7 @@
+erp_venv/
+backend/__pycache__/
+backend/.env
+frontend/node_modules/
+frontend/vite.config.js
+frontend/.gitignore
+instructions.txt
